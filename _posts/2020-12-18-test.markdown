@@ -17,27 +17,25 @@ description: test post
 
 **고주원** 바보 멍청이 [This is facebook][1] < 내 *페이스북 링크*.
 
-{% highlight raw %}
 링크를 달고 싶다면, [][] 첫 번째 괄호 안에 표시될 내용, 두 번째 괄호 안에 링크 번호 or 링크
 > 링크 번호는 맨 하단에 선언하는 듯
-{% endlight raw %}
 
 하하ㅏ하하하ㅏ
 
 #### source code
 
-{% highlight html %}
+
 int main(void){
     int a = 10;
     printf("%d", a);
 }
-{% endhighlight %}
+
 
 #### print
 
-{% highlight html %}
+
 10
-{% endhighlight %}
+
 
 # 이런 방법도 가능해요!
 
@@ -72,10 +70,8 @@ public static void main(String args[]){
 
 ## 이건 제목
 
-{% highlight raw %}
 html보다 이게 더 예쁜 듯
 저건 소스코드 쓸 때 쓰면 되겠당
-{% endhighlight %}
 
 ---
 
@@ -108,9 +104,9 @@ html보다 이게 더 예쁜 듯
 
 > 이렇게 쓰는 거 조금 예쁜 것 같다. 쿠쿠쿠
 
-{% highlight raw %}
+
 > Here is a quote. What this is should be self explanatory.
-{% endhighlight raw %}
+
 
 ---
 
@@ -122,11 +118,9 @@ URLs can be made in a handful of ways:
 * Another named link to [Mark It Down](https://google.com/)
 * Sometimes you just want a URL like <https://google.com/>.
 
-{% highlight raw %}
 * A named link to [MarkItDown][3].
 * Another named link to [MarkItDown](https://google.com/)
 * Sometimes you just want a URL like <https://google.com/>.
-{% endhighlight %}
 
 ---
 
@@ -135,9 +129,6 @@ URLs can be made in a handful of ways:
 A horizontal rule is a line that goes across the middle of the page.
 It's sometimes handy for breaking things up.
 
-{% highlight raw %}
----
-{% endhighlight %}
 
 ---
 
@@ -145,27 +136,27 @@ It's sometimes handy for breaking things up.
 
 Markdown can also contain images. I'll need to add something here sometime.
 
-{% highlight raw %}
+
 ![Markdowm Image][/image/url]
-{% endhighlight %}
+
 
 ![Markdowm Image][5]
 
 *Figure Caption*?
 
-{% highlight raw %}
+
 ![Markdowm Image][/image/url]
 <figcaption class="caption">Photo by John Doe</figcaption>
-{% endhighlight %}
+
 
 ![Markdowm Image][5]
 <figcaption class="caption">Photo by John Doe</figcaption>
 
 *Bigger Images*?
 
-{% highlight raw %}
+
 ![Markdowm Image][/image/url]{: class="bigger-image" }
-{% endhighlight %}
+
 
 ![Markdowm Image][5]{: class="bigger-image" }
 
@@ -175,7 +166,7 @@ Markdown can also contain images. I'll need to add something here sometime.
 
 A HTML Example:
 
-{% highlight html %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -186,11 +177,11 @@ A HTML Example:
     <h1>Just a test</h1>
 </body>
 </html>
-{% endhighlight %}
+
 
 A CSS Example:
 
-{% highlight css %}
+
 pre {
     padding: 10px;
     font-size: .8em;
@@ -205,11 +196,11 @@ code, pre, tt {
     font-family: Monaco, Consolas, Inconsolata, monospace, sans-serif;
     background: rgba(0,0,0,.05);
 }
-{% endhighlight %}
+
 
 A JS Example:
 
-{% highlight js %}
+
 // Sticky Header
 $(window).scroll(function() {
 
@@ -220,7 +211,7 @@ $(window).scroll(function() {
     }
 
 });
-{% endhighlight %}
+
 
 [1]: https://facebook.com/gnwjd309
 [2]: https://www.fileformat.info/info/unicode/char/2163/index.htm
