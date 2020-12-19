@@ -1,29 +1,3 @@
-<!--
----
-# blog page must be named index.html and in its own folder to support pagination
-# https://jekyllrb.com/docs/pagination/
-layout: category
-title: Blog
-pagination:
-  enabled: true
----
-<ul class="list">
-  
-	{% assign category = page.category | default: page.title %}
-	{% for post in site.categories[category] %}
-	  <li>
-		<h3>
-		  <a href="{{ site.baseurl }}{{ post.url }}">
-			{{ post.title }}
-		  </a>
-		  <small>{{ post.date | date_to_string }}</small>
-		</h3>
-	  </li>
-	{% endfor %}
-	
-  </ul>
-
-
 ---
 # blog page must be named index.html and in its own folder to support pagination
 # https://jekyllrb.com/docs/pagination/
@@ -55,4 +29,3 @@ pagination:
 		{% endfor %}
 	{% endif %}
 </section>
--->
