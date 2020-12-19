@@ -6,7 +6,7 @@ title: Blog
 pagination:
   enabled: true
 ---
-<ul class="posts-list">
+<ul class="list">
   
 	{% assign category = page.category | default: page.title %}
 	{% for post in site.categories[category] %}
