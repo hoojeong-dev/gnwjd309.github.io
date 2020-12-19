@@ -2,11 +2,10 @@
 layout: page
 ---
 
-{% include header.html %}
-
-{{content}}
 <ul class="category">
-  
+
+  {% include header.html %}
+  {{content}}  
   {% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
     <li>
@@ -18,7 +17,5 @@ layout: page
       </h3>
     </li>
   {% endfor %}
-  
+  {% include footer.html %}
 </ul>
-
-{% include footer.html %}
