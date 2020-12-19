@@ -120,6 +120,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-admin
+  - jekyll-sitemap
   - jekyll-paginate-v2
 
 jekyll-mentions:
