@@ -6,7 +6,32 @@ title: Blog
 pagination:
   enabled: true
 ---
-<section class="posts-list">
+<ul class="posts-list">
+  
+	{% assign category = page.category | default: page.title %}
+	{% for post in site.categories[category] %}
+	  <li>
+		<h3>
+		  <a href="{{ site.baseurl }}{{ post.url }}">
+			{{ post.title }}
+		  </a>
+		  <small>{{ post.date | date_to_string }}</small>
+		</h3>
+	  </li>
+	{% endfor %}
+	
+  </ul>
+
+<!--
+---
+# blog page must be named index.html and in its own folder to support pagination
+# https://jekyllrb.com/docs/pagination/
+layout: page
+title: Blog
+pagination:
+  enabled: true
+---
+<section class="list">
 	{% if site.posts.size == 0 %}
 		<p class="text-center">Nothing published yet!</p>
 	{% elsif site.pagination.enabled %}
@@ -29,3 +54,4 @@ pagination:
 		{% endfor %}
 	{% endif %}
 </section>
+-->
