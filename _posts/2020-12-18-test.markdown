@@ -8,7 +8,7 @@ tag:
 - markdown
 - elements
 star: flase
-category: study
+category: [study]
 author: Hoojeong Kim
 description: test post
 ---

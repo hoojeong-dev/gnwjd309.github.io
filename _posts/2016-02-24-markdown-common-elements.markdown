@@ -8,7 +8,7 @@ tag:
 - markdown
 - elements
 star: false
-category: study
+category: [study]
 author: johndoe
 description: Markdown summary with different options
 ---

@@ -8,7 +8,7 @@ tag:
 - markdown
 - components
 - extra
-category: study
+category: [study]
 author: jamesfoster
 description: Markdown summary with different options
 ---
