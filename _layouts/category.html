@@ -1,18 +1,49 @@
 ---
 layout: page
 ---
-<ul class="posts-list">
-  
-  {% assign category = page.category | default: page.title %}
-  {% for post in site.categories[category] %}
-    <li>
-      <h3>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-        </a>
-        <small>{{ post.date | date_to_string }}</small>
-      </h3>
-    </li>
-  {% endfor %}
-  
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% if site.analytics-google %}
+        {% include analytics-google.html %}
+    {% endif %}
+
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name=author content="{{ site.name }}">
+
+    {% seo %}
+
+    {% include favicon.html %}
+
+    <link rel="canonical" href="{{ site.baseurl }}{{ node.url | replace:'index.html','' }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ post.title }}" href="{{ post.url }}{{ "/feed.xml" }}" />
+
+    <style>
+    {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
+    {{ scss_sheet | scssify }}
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
+        {% if page.tag %}
+            <div class="category">
+        {% else %}
+            {% if showHeader != true %}
+                <div class="post {{ site.baseurl | downcase }}">
+            {% else %}
+                <div class="{{ post.title | downcase }}">
+            {% endif %}
+        {% endif %}
+
+            {{ content }}
+        </div>
+    </div>
+
+    {% include icons.html %}
+
+</body>
+</html>

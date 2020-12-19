@@ -7,7 +7,7 @@ headerImage: false
 tag:
 - markdown
 - elements
-star: true
+star: flase
 category: study
 author: Hoojeong Kim
 description: test post
