@@ -29,6 +29,7 @@ sitemap:
     </url>
     {% endunless %}
   {% endfor %}
+</urlset>
   {% for category in site.categories %}
     {% unless category.sitemap.exclude == "yes" %}
     <url>
@@ -53,6 +54,7 @@ sitemap:
     </url>
     {% endunless %}
   {% endfor %}
+</urlset>
 </urlset>
   {% for page in site.pages %}
     {% unless page.sitemap.exclude == "yes" %}
