@@ -55,7 +55,6 @@ sitemap:
     {% endunless %}
   {% endfor %}
 </urlset>
-</urlset>
   {% for page in site.pages %}
     {% unless page.sitemap.exclude == "yes" %}
     <url>
