@@ -1,82 +1,62 @@
----
-layout: null
-sitemap:
-  exclude: 'yes'
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
-    {% unless post.published == false %}
-    <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.sitemap.lastmod %}
-        <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-      {% elsif post.date %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-      {% endif %}
-      {% if post.sitemap.changefreq %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% else %}
-        <changefreq>monthly</changefreq>
-      {% endif %}
-      {% if post.sitemap.priority %}
-        <priority>{{ post.sitemap.priority }}</priority>
-      {% else %}
-        <priority>0.5</priority>
-      {% endif %}
-    </url>
-    {% endunless %}
-  {% endfor %}
-</urlset>
-  {% for category in site.categories %}
-    {% unless category.sitemap.exclude == "yes" %}
-    <url>
-      <loc>{{ site.url }}{{ category.url | remove: "index.html" }}</loc>
-      {% if category.sitemap.lastmod %}
-        <lastmod>{{ category.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-      {% elsif category.date %}
-        <lastmod>{{ category.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-      {% endif %}
-      {% if category.sitemap.changefreq %}
-        <changefreq>{{ category.sitemap.changefreq }}</changefreq>
-      {% else %}
-        <changefreq>monthly</changefreq>
-      {% endif %}
-      {% if category.sitemap.priority %}
-        <priority>{{ category.sitemap.priority }}</priority>
-      {% else %}
-        <priority>0.3</priority>
-      {% endif %}
-    </url>
-    {% endunless %}
-  {% endfor %}
-</urlset>
-  {% for page in site.pages %}
-    {% unless page.sitemap.exclude == "yes" %}
-    <url>
-      <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
-      {% if page.sitemap.lastmod %}
-        <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-      {% elsif page.date %}
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-      {% endif %}
-      {% if page.sitemap.changefreq %}
-        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-      {% else %}
-        <changefreq>monthly</changefreq>
-      {% endif %}
-      {% if page.sitemap.priority %}
-        <priority>{{ page.sitemap.priority }}</priority>
-      {% else %}
-        <priority>0.3</priority>
-      {% endif %}
-    </url>
-    {% endunless %}
-  {% endfor %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://gnwjd309.github.io/</loc>
+  <lastmod>2020-12-20T06:22:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://gnwjd309.github.io/about/</loc>
+  <lastmod>2020-12-20T06:22:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gnwjd309.github.io/blog/</loc>
+  <lastmod>2020-12-20T06:22:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gnwjd309.github.io/projects/</loc>
+  <lastmod>2020-12-20T06:22:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gnwjd309.github.io/category/</loc>
+  <lastmod>2020-12-20T06:22:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gnwjd309.github.io/indigo-jekyll-theme/</loc>
+  <lastmod>2020-12-20T06:22:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gnwjd309.github.io/test/</loc>
+  <lastmod>2020-12-20T06:22:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gnwjd309.github.io/markdown-extra-components/</loc>
+  <lastmod>2020-12-20T06:22:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gnwjd309.github.io/markdown-common-elements/</loc>
+  <lastmod>2020-12-20T06:22:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gnwjd309.github.io/tags/</loc>
+  <lastmod>2020-12-20T06:22:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>
