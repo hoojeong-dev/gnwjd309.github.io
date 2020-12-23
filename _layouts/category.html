@@ -20,9 +20,5 @@ layout: page
         <small>{{ post.date | date_to_string }}</small>
       </h3>
     </li>
-    <style>
-      {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
-      {{ scss_sheet | scssify }}
-      </style>
   {% endfor %}
 </ul>
