@@ -2,6 +2,6 @@
 
 layout: category
 
-title: study
+title: study, a, aaa
 
 ---
