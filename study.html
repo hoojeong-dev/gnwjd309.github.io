@@ -34,6 +34,7 @@ pagination:
 ---
 
 <section class="list">
+  {% include header.html %}
     {% for post in site.posts %}
         {% if post.category == 'study' %}
             <div class="item {% if post.star %}star{% endif %}">
