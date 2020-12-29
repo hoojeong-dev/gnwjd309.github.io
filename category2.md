@@ -2,6 +2,6 @@
 
 layout: category
 
-title: a
+title: Baekjoon Algorithm
 
 ---

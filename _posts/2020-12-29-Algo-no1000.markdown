@@ -1,0 +1,84 @@
+---
+title: "[BOJ] 백준 알고리즘 1000 : A+B 자바"
+layout: post
+date: 2020-12-29 15:30
+image: /assets/post_source/algo_no1000.jpg
+headerImage: false
+tag:
+- baekjoon
+- algorithm
+- java
+star: flase
+category: [Baekjoon Algorithm]
+author: Hoojeong Kim
+description: 백준 알고리즘 문제 풀이
+---
+
+## 문제 링크
+<br/>
+
+https://www.acmicpc.net/problem/1000
+
+<br/>
+
+---
+<br/>
+<br/>
+
+두 정수 A와 B를 입력받아 A+B를 출력하는 문제이다.<br/>
+
+입력을 보면, 아래처럼 한 줄에 두 수를 입력 받았다.
+<br/>
+<br/>
+
+> 1 2
+
+<br/>
+때문에, nextInt()를 사용해야 한다.
+<br/>
+<br/>
+
+
+---
+<br/>
+
+## 소스 코드
+<br/>
+
+```java
+import java.util.Scanner;
+
+public class No_1000 {
+
+	public static void main(String[] args) {
+		
+		Scanner scn = new Scanner(System.in);
+		
+		int A, B;
+		
+		A = scn.nextInt();
+		B = scn.nextInt();
+		
+		System.out.println(A+B);
+	}
+}
+```
+<br/>
+
+---
+
+<br/>
+
+참고로, 자바 언어로 답안을 제출할 때는 class의 이름을 `main`으로 해주어야 한다. 
+<br/>
+그러지 않을 경우에는, 다음과 같이 컴파일 에러가 발생한다.
+<br/>
+<br/>
+
+![image][1]
+
+
+
+
+
+[1]: /assets/post_source/algo_no1000.jpg
