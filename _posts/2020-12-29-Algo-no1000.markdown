@@ -13,37 +13,31 @@ category: [Baekjoon Algorithm]
 author: Hoojeong Kim
 description: 백준 알고리즘 문제 풀이
 ---
+<br/>
+<br/>
 
 ## 문제 링크
 <br/>
 
-https://www.acmicpc.net/problem/1000
+[https://www.acmicpc.net/problem/1000](https://www.acmicpc.net/problem/1000)
 
 <br/>
-
 ---
-<br/>
 <br/>
 
 두 정수 A와 B를 입력받아 A+B를 출력하는 문제이다.<br/>
 
 입력을 보면, 아래처럼 한 줄에 두 수를 입력 받았다.
 <br/>
-<br/>
 
 > 1 2
 
-<br/>
 때문에, nextInt()를 사용해야 한다.
 <br/>
-<br/>
-
 
 ---
-<br/>
 
 ## 소스 코드
-<br/>
 
 ```java
 import java.util.Scanner;
@@ -63,11 +57,9 @@ public class No_1000 {
 	}
 }
 ```
-<br/>
 
 ---
 
-<br/>
 
 참고로, 자바 언어로 답안을 제출할 때는 class의 이름을 `main`으로 해주어야 한다. 
 <br/>
@@ -75,10 +67,4 @@ public class No_1000 {
 <br/>
 <br/>
 
-![image][1]
-
-
-
-
-
-[1]: /assets/post_source/algo_no1000.jpg
+![ ](./assets/post_source/algo_no1000.png)
