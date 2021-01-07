@@ -9,7 +9,7 @@ tag:
 - algorithm
 - java
 star: flase
-category: [Baekjoon Algorithm]
+category: blog
 author: Hoojeong Kim
 description: 백준 알고리즘 문제 풀이
 ---
