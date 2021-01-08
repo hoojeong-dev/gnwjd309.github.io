@@ -2,7 +2,7 @@
 title: "[BOJ] 백준 알고리즘 1000 : A+B 자바"
 layout: post
 date: 2020-12-29 15:30
-image: /assets/post_source/algo_no1000.jpg
+image: /assets/post_source/algo_no1000.png
 headerImage: false
 tag:
 - baekjoon
@@ -66,4 +66,4 @@ public class No_1000 {
 <br/>
 <br/>
 
-![ ](./assets/post_source/algo_no1000.png)
+![image](../assets/post_source/algo_no1000.png)
