@@ -13,17 +13,17 @@ category: blog
 author: Hoojeong Kim
 description: linear algebra study
 ---
-- [데이터 사이언스 스쿨](https://datascienceschool.net/intro.html)을 통해 공부한 내용을 정리한 글입니다.
+- [데이터 사이언스 스쿨](https://datascienceschool.net/intro.html){:target="_blank"} 을 통해 공부한 내용을 정리한 글입니다.
 - 모든 코드는 **jupyter notebook**으로 작성되었습니다.
+- 넘파이와 관련된 기본적인 코드는 해당 게시글을 참고해주세요.
+    - [[Python] Python Numpy(넘파이)](https://hoojeong.dev/python-study-2/){:target="_blank"}
 
-<br>
+---
 
 # 선형대수란?
 선형대수(Linear algebra)는 데이터 분석에 필요한 각종 계산을 돕는 학문이다. 선형대수를 사용해 대량의 데이터를 포함하는 복잡한 계산 과정을 간단한 수식으로 표현할 수 있다.
 
 선형대수는 덧셈과 상수곱 구조를 갖는 벡터공간이 존재한다. 이차, 삼차함수같은 곡선이나 포물선이 존재하지 않고, 오직 직선(linear)으로만 이루어져 있다.
-
-<br>
 
 먼저, 넘파이로 코드를 작성하기 위해 넘파이 패키지를 import 한다.
 
@@ -48,7 +48,6 @@ pylab는 대부분의 matplotlib.pyplot와 numpy를 하나의 네임스페이스
 실습에서는 pylab를 사용했지만, 나는 pyplot를 사용하려고 한다.
 
 ---
-<br>
 
 # 데이터의 유형
 선형대수에서 다루는 데이터는 개수나 형태에 따라 다음과 같이 나뉜다.
@@ -56,14 +55,12 @@ pylab는 대부분의 matplotlib.pyplot와 numpy를 하나의 네임스페이스
  - 벡터(vector)
  - 행렬(matrix)
  - 텐서(tensor)
-<br>
 
 ## __스칼라__
 스칼라는 하나의 숫자로 이루어진 것을 말한다. (상수 = 스칼라)
 ```
                                     x ∈ R
 ```
-<br>
 
 ## __벡터__
 고등학교 때 배웠다면, 쉽게(?) 이해할 수 있는 개념이다. 벡터는 여러 개의 숫자가 특정한 순서대로 모여있는 것을 말한다.  
@@ -73,13 +70,18 @@ pylab는 대부분의 matplotlib.pyplot와 numpy를 하나의 네임스페이스
 
 이때 벡터는 가로가 행(row), 세로가 열(column)의 형태를 갖는다.
 ```
-                                    x = ⎡ a, b ⎤
-                                        ⎣ c, d ⎦
+                                x = ⎡ a, b ⎤
+                                    ⎣ c, d ⎦
 ```
 하나의 벡터를 이루는 데이터의 개수가 n개이면, 이 벡터를 n차원 벡터라고 한다.
 ```
-                                    x = ⎡ x1 ⎤
-                                        ⎢ x2 ⎥
-                                        ⎢ .. ⎥
-                                        ⎣ xN ⎦
+                                x = ⎡ x1 ⎤
+                                    ⎢ x2 ⎥
+                                    ⎢ .. ⎥
+                                    ⎣ xN ⎦
 ```
+* __특징 벡터__
+    * 데이터 벡터가 예측 문제에서 입력 데이터로 사용되면, 이를 __특징 벡터(feature vector)__ 라고 한다.
+
+
+## 연습문제 2.1.1
