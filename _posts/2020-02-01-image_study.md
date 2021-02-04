@@ -52,5 +52,6 @@ description: python study
    - 원본 이미지를 가지고, 여러 개의 입출력 데이터인 Feature Map(특징맵)을 만들어 분류한다. 
       - 이미지의 특징을 추출하기 때문에, 이미지가 변형되더라도 잘 인식할 수 있다.
 <br>
-
-![image](../assets/post_source/convolution.gif)
+<p align="center">
+  <img src="../assets/post_source/convolution.gif">
+</p>

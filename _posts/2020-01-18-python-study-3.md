@@ -32,7 +32,11 @@ import pandas as pd
 ```
 <br>
 
-- ### __series__
+### __1. series__
+
+Serise 클래스는 넘파이에서 제공하는 1차원 배열과 비슷하지만, 각 데이터에 인덱스를 부여할 수 있다.
+> Serise = 값(value) + 인덱스(index)
+
 <br>
 
 ```python
@@ -142,21 +146,19 @@ sr3
 
 <br>
 
-* ### __dataframe__
+* ### __2. dataframe__
 <br>
 
 ```python
 # Data Frame 생성
 # Data Frame에 들어갈 data를 정의할 때, dictionary나 array로 정의할 수 있음
 
-data = [
-    ['1', 'a', 90.72], 
-    ['2', 'b', 78.09], 
-    ['3', 'c', 98.43], 
-    ['4', 'd', 64.19], 
-    ['5', 'e', 81.30],
-    ['6', 'f', 99.14],
-]
+data = [['1', 'a', 90.72], 
+        ['2', 'b', 78.09], 
+        ['3', 'c', 98.43], 
+        ['4', 'd', 64.19], 
+        ['5', 'e', 81.30],
+        ['6', 'f', 99.14]]
 df = pd.DataFrame(data)
 df
 ```
