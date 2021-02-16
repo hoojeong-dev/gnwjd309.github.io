@@ -1,7 +1,7 @@
 ---
 title: "[Linear Algebra] 넘파이(Numpy) - 데이터와 행렬"
 layout: post
-date: 2020-02-04 07:19
+date: 2021-02-04 07:19
 image: 
 headerImage: false
 tag:
