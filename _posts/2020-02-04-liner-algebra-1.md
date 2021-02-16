@@ -25,7 +25,14 @@ description: linear algebra study
 
 선형대수는 덧셈과 상수곱 구조를 갖는 벡터공간이 존재한다. 이차, 삼차함수같은 곡선이나 포물선이 존재하지 않고, 오직 직선(linear)으로만 이루어져 있다.
 
-먼저, 넘파이로 코드를 작성하기 위해 넘파이 패키지를 import 한다.
+먼저,  실습을 진행하기 위해 필요한 패키지를 import 한다.
+
+이때 패키지를 설치하지 않았다면, 아래의 명령어를 통해 설치한다.
+```
+conda install numpy
+conda install matplotlib
+conda install Scikit-learn
+```
 
 ```python
 import numoy as np
@@ -43,9 +50,6 @@ pyplot는 사용환경 인터페이스(state-machine interface)를 제공한다.
 ### __pylab__
 pylab는 대부분의 matplotlib.pyplot와 numpy를 하나의 네임스페이스에 import 한다.
  - 이는 편리하기는 하지만, 네임스페이스가 더러워진다는 단점이 존재.
-
-추가적으로 pylab는 앞으로 사라질 것으로 전망된다.  
-실습에서는 pylab를 사용했지만, 나는 pyplot를 사용하려고 한다.
 
 ---
 
@@ -83,5 +87,79 @@ pylab는 대부분의 matplotlib.pyplot와 numpy를 하나의 네임스페이스
 * __특징 벡터__
     * 데이터 벡터가 예측 문제에서 입력 데이터로 사용되면, 이를 __특징 벡터(feature vector)__ 라고 한다.
 
+---
 
 ## 연습문제 2.1.1
+numpy를 사용해 2차원 이미지 데이터를 1차원 벡터로 변환해보자.
+
+예측 문제의 입력 데이터는 대부분 벡터로 표시한다. 예를 들어 숫자 이미지를 입력받아 어떤 숫자인지 분류하는 문제를 생각해보면, 보통의 경우에 2차원 데이터인 이미지를 1차원 벡터로 변환하여 사용한다.
+
+해당 연습문제에서는 Scikit-learn에서 제공하는 데이터셋을 사용하였다.  
+digit image 데이터셋은 0부터 9까지의 숫자를 손으로 쓴 후에, 8x8 해상도의 이미지로 스캔한 것이다.
+
+먼저 데이터셋을 불러오기 위해 scikit-learn 패키지를 import 한다.
+```python
+from sklearn.datasets import load_digits
+```
+
+데이터를 로드하고, 이미지를 선택한다.
+해당 연습문제에서는 0과 1의 이미지 8개를 사용하였다.
+```python
+digits = load_digits()
+samples = [0, 10, 20, 30, 1, 11, 21, 31]
+```
+
+```python
+d = []
+for i in range(8):
+    d.append(digits.images[samples[i]])
+```
+
+```python
+plt.figure(figsize=(8, 2))
+```
+
+```python
+for i in range(8):
+    plt.subplot(1, 8, i + 1)
+    plt.imshow(d[i], interpolation='nearest', cmap=plt.cm.bone_r)
+    plt.grid(False); plt.xticks([]); plt.yticks([])
+    plt.title("image {}".format(i + 1))
+```
+
+```python
+plt.suptitle("숫자 0과 1 이미지")
+plt.tight_layout()
+plt.show
+```
+해당 코드의 결과는 다음과 같다.
+
+<p align="center">
+  <img src="../assets/post_source/0216_image_data.png">
+</p>
+
+```python
+v=[]
+for i in range(8):
+    v.append(d[i].reshape(64, 1))
+```
+```python
+plt.figure(figsize=(8, 3))
+```
+```python
+for i in range(8):
+    plt.subplot(1, 8, i + 1)
+    plt.imshow(v[i], aspect=0.4, interpolation='nearest', cmap=plt.cm.bone_r)
+    plt.grid(False); plt.xticks([]); plt.yticks([])
+    plt.title("vector {}".format(i + 1))
+```
+```python
+plt.suptitle("벡터화 된 이미지", y=1.05)
+plt.tight_layout(w_pad=7)
+plt.show
+```
+해당 코드의 결과는 다음과 같다.
+
+<p align="center">
+  <img src="../assets/post_source/0216_vector_data.png">
+</p>
