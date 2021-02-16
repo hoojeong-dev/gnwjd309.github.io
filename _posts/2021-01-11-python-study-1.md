@@ -1,7 +1,7 @@
 ---
 title: "[Python] Python 기초"
 layout: post
-date: 2020-01-11 16:31
+date: 2021-01-11 16:31
 image: 
 headerImage: false
 tag:

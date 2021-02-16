@@ -1,7 +1,7 @@
 ---
 title: "[Python] Python Pandas(판다스)"
 layout: post
-date: 2020-01-18 19:13
+date: 2021-01-18 19:13
 image: 
 headerImage: false
 tag:

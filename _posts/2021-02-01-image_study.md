@@ -1,7 +1,7 @@
 ---
 title: "[Python] Computer Vision - Convolution Study"
 layout: post
-date: 2020-02-01 19:27
+date: 2021-02-01 19:27
 image: 
 headerImage: false
 tag:

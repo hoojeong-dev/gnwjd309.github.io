@@ -1,7 +1,7 @@
 ---
 title: "[Python] Python Numpy(넘파이)"
 layout: post
-date: 2020-01-14 20:38
+date: 2021-01-14 20:38
 image: 
 headerImage: false
 tag:
