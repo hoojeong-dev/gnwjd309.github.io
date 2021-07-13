@@ -26,7 +26,7 @@ description:
 덕분에 '앱 개발'에 대한 흥미를 갖게 되었고, 현재 내가 쓰고 있는 아이폰에서 사용할 수 있는 어플리케이션을 구현하고 싶어졌습니다.
 
 <p align="center">
-  <img src="../assets/post_source/0713_swift_logo.png" width="250" height="250">
+  <img src="../assets/post_source/0713_swift_logo.png">
 </p>
 
 이를 위해서는 먼저 swift 언어에 대해 공부해야 합니다.
@@ -41,11 +41,12 @@ description:
 
 # __*스위프트(Swift)란?*__
 
-<p align="center">
-  <img src="../assets/post_source/0713_swift_wwdc.png" width="250" height="250">
-</p>
-
 스위프트는 애플의 iOS와 macOS 등 자사 제품 개발에 활용하고자 만든 언어로, 2014년 6월 2일 WWDC에서 처음 소개되었다.
+
+<p align="center">
+  <img src="../assets/post_source/0713_swift_wwdc.png"
+  width=400>
+</p>
 
 스위프트는 안전을 우선으로 하는 프로그래밍 패턴을 지향하며, 더욱 쉽고 재미있게 프로그래밍할 수 있도록 옵셔널, 제네리그 프로토콜, 튜픙 등의 새로운 기능을 도입했다.
 
