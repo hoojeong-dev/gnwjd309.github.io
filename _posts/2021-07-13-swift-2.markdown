@@ -48,7 +48,7 @@ Xcode 설치 이후, 실행하여 사진과 같이 Welcome to Xcode 창이 뜨�
   <img src="../assets/post_source/0713_swift2_3.png" width=350>
 </p>
 
-나처럼 최신 버전의 경우, Xcode의 메뉴 중 [Window] - [New] - [Playground] 메뉴를 선택한다.
+나처럼 최신 버전의 경우, Xcode의 메뉴 중 [File] - [New] - [Playground] 메뉴를 선택한다.
 <br>
 
 ### __*파일 생성*__
