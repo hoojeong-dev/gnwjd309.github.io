@@ -1,0 +1,24 @@
+---
+title: "[Swift] 0. 컴퓨터 프로그래밍 패러다임"
+layout: post
+date: 2021-07-13 14:09
+image: 
+headerImage: false
+tag:
+- swift
+- study
+category: blog
+author: Hoojeong Kim
+description: 
+---
+<br/>
+<br/>
+
+* swift에 대해 공부한 내용을 정리한 글입니다.
+* 해당 글은 스위프트 프로그래밍 3판을 참고하여 작성했습니다.
+<br/>
+<br/>
+---
+<br/>
+
+## __**07.13 추가 예정**__
