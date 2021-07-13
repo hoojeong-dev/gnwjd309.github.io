@@ -1,0 +1,103 @@
+---
+title: "[Swift] 1. 스위프트 기초 : Xcode로 스위프트 실행하기"
+layout: post
+date: 2021-07-13 14:09
+image: 
+headerImage: false
+tag:
+- swift
+- study
+category: blog
+author: Hoojeong Kim
+description: 
+---
+<br/>
+<br/>
+
+* swift에 대해 공부한 내용을 정리한 글입니다.
+* 해당 글은 <a href="https://www.hanbit.co.kr/store/books/look.php?p_code=B9421379018" target="_blank">한빛미디어의 스위프트 프로그래밍 3판</a>을 참고하여 작성했습니다.
+<br/>
+
+---
+<br/>
+
+# __*스위프트 실행 환경*__
+스위프트는 오픈소스로 전환된 이후, macOS 외의 다른 환경(리눅스나 윈도우)에서 사용할 수 있다.
+
+하지만 본 포스팅에서는 애플에서 공식 지원하는 Xcode를 사용하고자 한다.
+<br>
+
+### __*Xcode 설치*__
+Xcode는 macOS에서 동작하는 애플의 IDE(통합 개발 환경)으로 맥 앱 스토어에서 무료로 다운받을 수 있다.
+
+<p align="center">
+  <img src="../assets/post_source/0713_swift2-1.png" width="250" height="250">
+</p>
+
+Xcode를 사용하여 맥 전용 애플리케이션 제작부터 iOS, watchOS, tvOS 등의 애플리케이션이나 프레임 워크, 라이브러리 등을 제작하는 것이 가능하다.
+
+<p align="center">
+  <img src="../assets/post_source/0713_swift2-2.png" width="250" height="250">
+</p>
+
+Xcode 설치 이후, 실행하여 사진과 같이 Welcome to Xcode 창이 뜨는 지 확인한다.
+
+책에 의하면 Welcome to Xcode 창에서 곧바로 플레이그라운드를 사용할 수 있지만, 업데이트 하면서 변경된 탓인지 나는 뜨지 않았다.
+
+<p align="center">
+  <img src="../assets/post_source/0713_swift2-3.png" width="250" height="250">
+</p>
+
+나처럼 최신 버전의 경우, Xcode의 메뉴 중 [Window] - [New] - [Playground] 메뉴를 선택한다.
+<br>
+
+### __*파일 생성*__
+Xcode의 플레이그라운드(Playgrounds)는 별도의 프로젝트 생성 없이 스위프트 코드를 실행할 수 있는 스위프트 코딩 환경이다.
+
+기본 문법 연습부터 복잡한 코드 테스트까지 다양한 기능을 이용할 수 있는 좋은 도구이다.
+
+<p align="center">
+  <img src="../assets/post_source/0713_swift2-4.png" width="250" height="250">
+</p>
+
+이어서 생성 창이 나타나면 [iOS], [tvOS], [macOS] 중 [iOS]를 선택한다.
+
+[Blank], [Game], [Map], [Single View] 중 [Blank]를 선택하고 [Next]를 누른다.
+
+<p align="center">
+  <img src="../assets/post_source/0713_swift2-5.png" width="250" height="250">
+</p>
+
+다음과 같이 파일의 이름과 저장 경로를 설정한 뒤 [Create]를 선택한다.
+<br>
+
+### __*파일 실행*__
+파일을 생성하면 다음과 같은 소스 창이 나타난다.
+
+<p align="center">
+  <img src="../assets/post_source/0713_swift2_6.png" width="250" height="250">
+</p>
+
+기본적으로 다음과 같은 코드가 작성되어 있는데,
+
+```swift
+import UIKit
+
+var greeting = "Hello, playground"
+```
+정상적으로 컴파일되는 지 확인하기 위해 print()를 사용하여 greeting 변수를 출력해 보았다.
+
+<p align="center">
+  <img src="../assets/post_source/0713_swift2_7.png" width="250" height="250">
+</p>
+
+프로그램을 컴파일 하기 위해서는 콘솔 창 위의 ▶︎ 버튼을 누르거나, 명령어를 입력한다.
+
+> 전체 코드 컴파일 : shift + command + return(Enter)  
+> 커서 위치까지 컴파일 : shift + return(Enter)
+
+<br>
+
+---
+
+스위프트를 개발하기 위한 환경을 갖추었기 때문에, 다음에는 스위프트의 데이터 타입에 대해 공부하고자 한다.
