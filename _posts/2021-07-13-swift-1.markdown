@@ -12,14 +12,12 @@ author: Hoojeong Kim
 description: 
 ---
 <br/>
-<br/>
 
 * swift에 대해 공부한 내용을 정리한 글입니다.
 * 해당 글은 <a href="https://www.hanbit.co.kr/store/books/look.php?p_code=B9421379018" target="_blank">한빛미디어의 스위프트 프로그래밍 3판</a>을 참고하여 작성했습니다.
 <br/>
 
 ---
-<br/>
 
 지난 4개월 간, 해커톤이나 교내 프로젝트로 안드로이드 어플리케이션을 개발했습니다.
 
@@ -37,7 +35,6 @@ description:
 <br/>
 
 ---
-<br/>
 
 # __*스위프트(Swift)란?*__
 

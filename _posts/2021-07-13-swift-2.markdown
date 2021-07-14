@@ -12,14 +12,12 @@ author: Hoojeong Kim
 description: 
 ---
 <br/>
-<br/>
 
 * swift에 대해 공부한 내용을 정리한 글입니다.
 * 해당 글은 <a href="https://www.hanbit.co.kr/store/books/look.php?p_code=B9421379018" target="_blank">한빛미디어의 스위프트 프로그래밍 3판</a>을 참고하여 작성했습니다.
 <br/>
 
 ---
-<br/>
 
 # __*스위프트 실행 환경*__
 스위프트는 오픈소스로 전환된 이후, macOS 외의 다른 환경(리눅스나 윈도우)에서 사용할 수 있다.
@@ -96,7 +94,6 @@ var greeting = "Hello, playground"
 > 전체 코드 컴파일 : shift + command + return(Enter)  
 > 커서 위치까지 컴파일 : shift + return(Enter)
 
-<br>
 
 ---
 
