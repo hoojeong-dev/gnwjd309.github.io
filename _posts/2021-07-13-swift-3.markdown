@@ -1,5 +1,5 @@
 ---
-title: "[Swift] 1. 스위프트 기초 : 스위프트란 처음 시작하기"
+title: "[Swift] 1. 스위프트 기초 : 스위프트 처음 시작하기"
 layout: post
 date: 2021-07-13 14:09
 image: 
